@@ -1,0 +1,27 @@
+package com.oesia.formacion.practica.architecture.persistence.daos.vendor;
+
+public class DaoVendorImpl implements Vendor{
+
+	private static final String DaoVendorImpl = null;
+	@Override
+	public void safeVendor(String msg) {
+	}
+
+	private static DaoVendorImpl INSTANCE = null;
+	/**
+	 * constructor
+	 */
+	private DaoVendorImpl() {
+
+	}
+	public static DaoVendorImpl getInstance() {
+		if (INSTANCE==null) {
+			INSTANCE = new DaoVendorImpl();
+		}
+		return INSTANCE;
+	}
+	
+	void vendor (String msg) {
+				
+	}
+}
